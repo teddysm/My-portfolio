@@ -1,3 +1,4 @@
+/* setting global variables */
 * {
 --border-color: teal;
 --background-color: lightskyblue;
@@ -8,6 +9,8 @@ body{
   display: flex;
   flex-direction: column;
 }
+
+/* align all content in the center, set color and space content evenly */
 header{
   display: flex;
   justify-content: space-evenly;
@@ -15,12 +18,14 @@ header{
   align-items: center;
 }
 
+/* set profile image size and make border round */
 header img{
   height: 62px;
   width: 62px;
   border-radius: 20px;
 }
 
+/* give nav links their color and set the underline style */
 header a{
   margin: 4px;
   text-decoration: none;
@@ -58,16 +63,18 @@ section div{
   flex: 4;
 }
 
+/* give hero image size and set margin */
 .hero {
   height: 200px;
   width: 100%;
   background-image: url("../images/hero2.jpg"); 
-  background-size: cover;
-  background-position: center;
+  background-size: cover; 
+  background-position: center; 
   margin-bottom: 20px;
   position: relative;
 }
 
+/* set style, size and position for the text box on hero image */
 .hero-text{
   width: 300px;
   height: 20px;
@@ -78,6 +85,7 @@ section div{
   position: absolute;
 }
 
+/* create a side border for all body sections */
 .side-border{
   border-right: 3px solid darkblue;
   margin-right: 15px;
@@ -86,6 +94,7 @@ section div{
   word-spacing: 9999rem;
 }
 
+/* create a grid container and make it responsive */
 .grid-container{
   display: grid;
   grid-template-columns: repeat(autofit, minmax(400px, 1fr));
@@ -93,19 +102,21 @@ section div{
   grid-gap: 20px;
 }
 
+/* set position and font size for grid items */
 .grid-item{
   position: relative;
   font-size: 25px;
   color: var(--text-color);
   border: 2px solid var(--border-color);
-  background-color: var(--background-color);
   opacity: 50%;
 }
 
+/* make first grid item larger than the rest */
 .grid-item-1{
   grid-column: span 2;
 }
 
+/* set grid item description text and its position */
 .grid-item::before{
   position: absolute;
   font-size: 20px;
@@ -114,11 +125,13 @@ section div{
   background-color: var(--background-color);
 }
 
+/* when user hover over a work image, there is no opacity */
 .grid-item:hover{
   opacity: 100%;
 }
 
-.grid-item::before {
+/* add description to each grid-item */
+.grid-item-1::before {
   content: "Spy Game \A Java";
   white-space: pre;
 }
@@ -143,12 +156,14 @@ section div{
   white-space: pre;
 }
 
+/* make work image fit in grid */
 .work-img{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+/* Space the contact links evenly and make it wrap */
 .contact-link{
   display: flex;
   flex-wrap: wrap;
@@ -157,6 +172,7 @@ section div{
   font-weight: bold;
 }
 
+/* set underline style and position */
 .contact-link a{
   text-decoration: none;
   padding-bottom: 6px;

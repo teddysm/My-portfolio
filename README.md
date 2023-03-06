@@ -26,7 +26,7 @@ This is a landing page to my portfolio
 ## Links
 
 - Github page: https://github.com/teddysm/My-portfolio
-- Deployed page:
+- Deployed page: https://teddysm.github.io/My-portfolio/
 
 
 ## Features

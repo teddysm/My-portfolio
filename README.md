@@ -1,16 +1,15 @@
 # My-portfolio
 This is a landing page to my portfolio
 
-## Description
 
+## Description
 
 - I want to create a professional landing page for my Portfolio that showcase my work experience, contact information and a short description about me.
 - I build this project as a stepping stone to showcase my future projects for future recruiters/employers.
 - I better understood the concepts and how to use CSS variables, flexbox, grid and media queries.
 
-## Table of Contents (Optional)
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
+## Table of Contents 
 
 - [Usage](#usage)
 - [Links](#links)
@@ -18,13 +17,17 @@ If your README is long, add a table of contents to make it easy for users to fin
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
 
+
 ## Usage
 
 ![Screenshot](./assets/images/MyPortfolio.jpg)
+ 
 
 ## Links
-Github page: https://github.com/teddysm/My-portfolio
-Deployed page:
+
+- Github page: https://github.com/teddysm/My-portfolio
+- Deployed page:
+
 
 ## Features
 

@@ -10,20 +10,27 @@ body{
 }
 header{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: rgba(8, 21, 101, 0.925);
   align-items: center;
 }
 
+header img{
+  height: 62px;
+  width: 62px;
+  border-radius: 20px;
+}
 
 header a{
-  margin: 2px;
-  text-decoration-color: var(--background-color) ;
-  color: teal;
+  margin: 4px;
+  text-decoration: none;
+  color: var(--border-color);
+  padding-bottom: 6px;
+  border-bottom: 3px solid var(--border-color);  
 }
 
 header h1{
-  background-color: teal;
+  background-color: var(--border-color);
   padding: 8px;
   margin: 5px;
   margin-left: 0px;
@@ -34,12 +41,13 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  min-height: calc(100vh - 237px);
+  /* min-height: calc(100vh - 237px); */
 }
 
 section{
   display: flex;
   margin-bottom: 40px;
+  margin-right: 40px;
 }
 
 section h2{
@@ -51,7 +59,6 @@ section div{
 }
 
 .hero {
-  background-color: red;
   height: 200px;
   width: 100%;
   background-image: url("../images/hero2.jpg"); 
@@ -64,7 +71,7 @@ section div{
 .hero-text{
   width: 300px;
   height: 20px;
-  background-color: lightblue;
+  background-color: var(--background-color);
   text-align: center;
   left: 68%;
   top: 80%;
@@ -72,21 +79,19 @@ section div{
 }
 
 .side-border{
-  border-right: 2px solid darkblue;
+  border-right: 3px solid darkblue;
   margin-right: 15px;
   padding: 5px;
   text-align: right;
   word-spacing: 9999rem;
 }
 
-
 .grid-container{
   display: grid;
   grid-template-columns: repeat(autofit, minmax(400px, 1fr));
-  grid-template-rows: 450px 270px 270px;
+  grid-template-rows: repeat(autofit, minmax(270px, 450px));
   grid-gap: 20px;
 }
-
 
 .grid-item{
   position: relative;
@@ -116,51 +121,26 @@ section div{
 .grid-item::before {
   content: "Spy Game \A Java";
   white-space: pre;
-  /* position: absolute; */
-  /* font-size: 20px;
-  font-weight: bold;
-  bottom: 90px;
-  background-color: var(--background-color); */
 }
 
 .grid-item-2::before {
   content: "Snake Game \A Java";
   white-space: pre;
-  /* position: absolute; */
-  /* font-size: 20px;
-  font-weight: bold;
-  bottom: 80px;
-  background-color: var(--background-color); */
 }
 
 .grid-item-3::before {
   content: "SyllaShare \A React/Django";
   white-space: pre;
-  /* position: absolute;
-  font-size: 20px;
-  font-weight: bold;
-  bottom: 80px;
-  background-color: var(--background-color); */
 }
 
 .grid-item-4::before {
   content: "Stronk King Kong \A Pigeon Forge";
   white-space: pre;
-  /* position: absolute;
-  font-size: 20px;
-  font-weight: bold;
-  bottom: 80px;
-  background-color: var(--background-color); */
 }
 
 .grid-item-5::before {
   content: "Rainbow \A After rain";
   white-space: pre;
-  /* position: absolute;
-  font-size: 20px;
-  font-weight: bold;
-  bottom: 80px;
-  background-color: var(--background-color); */
 }
 
 .work-img{
@@ -177,24 +157,14 @@ section div{
   font-weight: bold;
 }
 
-
-/* @media screen and (max-width: 992px){
-
+.contact-link a{
+  text-decoration: none;
+  padding-bottom: 6px;
+  border-bottom: 3px solid var(--border-color);  
 }
 
-@media screen and (max-width: 768px){
-
-}
-
-@media screen and (max-width: 576px){
-  .grid-container{
-    grid-template-columns: 150px 150px;
-    grid-template-rows: 150px 150px 150px;
-  }
-  header{
-    width: 50%;
-  }
-  .hero{
-    width: 60%;
-  }
+/* @media screen and (max-width: 768px) {
+  
 } */
+
+

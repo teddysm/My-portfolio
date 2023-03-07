@@ -80,8 +80,8 @@ section div{
   height: 20px;
   background-color: var(--background-color);
   text-align: center;
-  left: 68%;
-  top: 80%;
+  right: 65px;
+  bottom: 20px;
   position: absolute;
 }
 
